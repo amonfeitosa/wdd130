@@ -63,14 +63,13 @@ section {
 .gallery {
     text-align: center;
     display: grid;
-    grid-template-columns: (flex, minmax( 1fr));
+    grid-template-columns: (flex, minmax(1fr));
     gap: 10px;
     margin-top: 10px;
     justify-items: center;
     padding: 20px;
 }
 .gallery img {
-    grid-template-columns: (flex, minmax(2fr));
     width: 100%;
     height:auto;
     border-radius: 8px;
