@@ -63,25 +63,28 @@ section {
 .gallery {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: (flex, minmax( 1fr));
     gap: 10px;
     margin-top: 10px;
     justify-items: center;
     padding: 20px;
 }
 .gallery img {
+    grid-template-columns: (flex, minmax(2fr));
     width: 100%;
     height:auto;
     border-radius: 8px;
 }
 footer {
-    background-color: #1a1515;
+    background-color: #160f0f;
     color: #ffff;
-    text-align: center;
+    text-align: right;
     padding: 20px;
+    margin-top: 10px;
 }
 footer p {
     margin-bottom: 10px;
+    text-align: center;
 }
 footer .sociallinks {
     margin-top: 10px;
