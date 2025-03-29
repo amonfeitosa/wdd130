@@ -1,88 +1,95 @@
 :root {
-    --primary-color: #ffff
-    --accent-color: #D0E9F5
-}
-body, h1, h2, p, img, nav a {
-    margin: 1;
-    padding: 1;
-    border: 1;
-    text-decoration: none;
+    --primary-color: #ffff;
+    --accent-color1: #160f0f;
+    --accent-color2: #00ffff;
 }
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #ffff;
 }
 header {
-    background-color: #D0E9F5;
-    color: white;
+    background-color: #160f0f;
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
 }
-.logo {
-    display: block;
-    align-items: center;
-    justify-content: center;
+header img {
+    width: 150px;
     margin-bottom: 10px;
 }
-.logo img {
-    max-height: 40px;
-    margin-right: 10px;
-}
-header h1 {
-    font-size: 2em;
-    margin-bottom: 50px;
-}
-header p {
-    font-size: 1.2em;
-}
-
-.hero {
-    position: left;
-    color: #3b3232;
-}
-.hero h1{
-    position: absolute;
-    top: 5%;
-    left: 35%;
-    font-size: 3em;
-    border: 1;
-}
-.hero img{
-    width: 100%;
-    margin-top: 55px;
-    display: -moz-box;
-}
-.hero article{
-    position: absolute;
-    top: 100%;
-    left: 20px;
-    background-color: black(0, 0, 0, 0.5);
-    padding: 20px;
-    width: 40%;
+nav a {
     color: #ffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
-.hero article img{
-    max-width: 100px;
+nav a:hover {
+    color: #00ffff;
+}
+.hero {
+    position: relative;
+    text-align: center;
+}
+.hero img {
+    width: 100%;
     height: auto;
-    float: left;
-    margin-left: 5px;
 }
-.history, .adventure {
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    color: #ffff;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+article {
+    text-align: center;
+    margin: 20px;
+}
+article img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
-.adventure img {
-    width: 50%;
-    max-height: 75px;
-    object-fit: cover;
-    margin-bottom: 5px;
+section {
+    padding: 40px;
+    text-align: center;
+}
+.section h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.gallery {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+    justify-items: center;
+    padding: 20px;
+}
+.gallery img {
+    width: 100%;
+    height:auto;
+    border-radius: 8px;
 }
 footer {
+    background-color: #1a1515;
+    color: #ffff;
     text-align: center;
-    padding: 20px 0;
-    background-color: #ffff;
+    padding: 20px;
 }
-.social img {
-    max-height: 30px;
-    margin: 0 5px;
+footer p {
+    margin-bottom: 10px;
+}
+footer .sociallinks {
+    margin-top: 10px;
+}
+footer .sociallinks a {
+    margin: 0 10px;
+}
+footer .sociallinks img {
+    width: 30px;
+    height: 30px;
 }
