@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #ffff;
+    --accent-color1: #160f0f;
+    --accent-color2: #00ffff;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #160f0f;
+    padding: 10px;
+    text-align: center;
+}
+header img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+nav a {
+    color: #ffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.hero {
+    color: #00ffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: relative;  /* Allow absolute positioning of content */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    flex-direction: column;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.hero .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #ffff;
+    padding: 0 20px;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+.hero .btn {
+    background-color: var(--accent-color1);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+article {
+    text-align: center;
+    margin: 20px;
+}
+article img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+section {
+    padding: 40px;
+    text-align: center;
+}
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.gallery {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.gallery .flex-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery img {
+    width: 350px;
+    max-width: 200px;
+    height: 250px;
+    border-radius: 5px;
+}
+footer {
+    background-color: #160f0f;
+    color: #ffff;
+    text-align: right;
+    padding: 20px;
+    margin-top: 10px;
+}
+footer p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer .sociallinks {
+    margin-top: 10px;
+}
+footer .sociallinks a {
+    margin: 0 10px;
+}
+footer .sociallinks img {
+    width: 30px;
+    height: 30px;
+}
+.cta {
+    text-align: center;
+    background-color: var(--accent-color2);
+    color: var(--accent-color1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.cta .btn {
+    display: inline-block;
+    background-color: var(--accent-color1);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.trip-descriptions h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.trip-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.trip {
+    flex: 1 1 300px;
+    background: #ffff;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 350px;
+    text-align: center;
+}
+.trip img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.trip-table h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .trip-table {
+        overflow-x: auto;
+    }
+}
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ffff;
+    padding: 10px;
+    text-align: center;
+}
+.trip-table th {
+    background-color: #160f0f;
+    color: #ffff;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+main img {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+aside {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    text-align: center;
+}
+aside img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
